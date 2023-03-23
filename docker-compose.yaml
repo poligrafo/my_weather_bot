@@ -1,0 +1,14 @@
+version: '2.15.1'
+
+services:
+  bot:
+    container_name: bot
+    build: .
+  db:
+    container_name: db
+    ports:
+      - '5432'
+    environment:
+      - POSTGRES_PASSWORD=1390
+      - POSTGRES_USER=postgres
+    image: postgres:14.7
