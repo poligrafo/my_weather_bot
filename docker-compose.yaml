@@ -1,4 +1,4 @@
-version: '2.15.1'
+version: '3.8'
 
 services:
   bot:
@@ -9,6 +9,6 @@ services:
     ports:
       - '5432'
     environment:
-      - POSTGRES_PASSWORD=1390
+      - POSTGRES_PASSWORD=postgres
       - POSTGRES_USER=postgres
-    image: postgres:14.7
+    image: postgres:14.5
